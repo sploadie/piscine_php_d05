@@ -1,2 +1,2 @@
-SELECT TO_DAYS(MAX(date_fin_affiche)) - TO_DAYS(MIN(date_debut_affiche)) AS uptime FROM film
+SELECT TO_DAYS(MAX(date)) - TO_DAYS(MIN(date)) AS uptime FROM historique_membre
 GROUP BY id_film;
